@@ -94,7 +94,7 @@ export default {
                 },
                 {
                     title: "Hour Tracker",
-                    description: "Python developed software that automates and manages the hours covered by students in their social service. This repository also includes the SQL file to create the data base that stores the necessary information for the software to work correctly, such as the current hours covered by each student, the objecive hours of each student, the basic data for students and teachers to access the system and logs for all the entering and exiting students in the system.",
+                    description: "Python developed software that automates and manages the hours covered by students in their social service.",
                     technologies: ["Python", "SQL", "MySQL"],
                     link: "https://github.com/EmilioRivera0/hour_tracker",
                     l_check: true
@@ -195,8 +195,8 @@ export default {
             <div class="min-[768px]:hidden mb-3">
                 <div class="sm:hidden">
                     <select
-                        class="bg-gray-50 text-gray-900 text-sm rounded-lg block w-full p-2.5 dark:bg-gray-700 dark:text-white">
-                        <option v-for="it in categories" @click="set_category(it)">{{ it }}</option>
+                        class="bg-gray-50 text-gray-900 font-bold text-lg rounded-lg block w-full p-2.5 dark:bg-gray-700 dark:text-white">
+                        <option class="font-bold text-lg" v-for="it in categories" @click="set_category(it)">{{ it }}</option>
                     </select>
                 </div>
                 <ul
@@ -222,12 +222,12 @@ export default {
             </div>
             <!-- Cards Container -->
             <div class="grid md:grid-cols-3">
-                <div v-for="it in get_content" class="flex flex-col items-center min-[1000px]:flex-row md:mx-1 mb-3">
+                <div v-for="it in get_content" class="flex flex-col items-start min-[1000px]:flex-row md:mx-1 mb-3">
                     <!-- Image Preview
                     <img class="object-cover w-full min-[1000px]:w-1/3 rounded-xl h-96"
                         :src="'/@fs'+it.image" @click="set_img(it.image)">-->
                     <div
-                        class="flex-col  w-full p-4 h-full leading-normal rounded-xl shadow bg-white border border-gray-200 dark:border-gray-700 dark:bg-gray-800">
+                        class="flex-col  w-full p-4 h-auto leading-normal rounded-xl shadow bg-white border border-gray-200 dark:border-gray-700 dark:bg-gray-800">
                         <h1 class="mb-2 ml-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{{ it.title }}
                         </h1>
                         <p class="mb-3 ml-1 text-xl text-gray-700 dark:text-gray-400">{{ it.description }}</p>

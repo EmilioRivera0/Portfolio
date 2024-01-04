@@ -36,7 +36,7 @@ export default {
         <!-- Profile Div -->
         <div class="flex flex-col items-start w-10/12 md:flex-row">
             <!-- Picture of Me -->
-            <img class="object-cover w-full rounded-xl h-96 md:h-full md:w-1/3" src="/home/sonny/Downloads/Me.jpg" alt="">
+            <img class="object-cover w-full rounded-xl h-96 md:h-full md:w-1/3" src="../assets/Me.jpg" alt="">
             <!-- Description of Me -->
             <div
                 class="flex flex-col justify-between p-4 leading-normal md:w-2/3 opacity-95 border border-gray-200 rounded-xl shadow bg-white dark:border-gray-700 dark:bg-gray-800">

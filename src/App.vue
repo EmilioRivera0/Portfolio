@@ -2,6 +2,7 @@
 export default {
     data() {
         return {
+            current_page: "Home",
         }
     },
     methods: {
@@ -22,8 +23,71 @@ export default {
             else {
                 menu.classList.toggle('hidden');
             }
-        }
-    }
+        },
+        set_current_page(page) {
+            const home = this.$refs.home;
+            const projects = this.$refs.projects;
+            const cv = this.$refs.cv;
+
+            const profile_view = this.$refs.profile_view;
+            const projects_view = this.$refs.projects_view;
+
+            if (page === "Home") {
+                home.classList.toggle('bg-blue-700');
+                home.classList.toggle('md:text-blue-700');
+                home.classList.toggle('text-white');
+                home.classList.toggle('text-gray-900');
+                home.classList.toggle('dark:text-white');
+                home.classList.toggle('md:dark:text-blue-500');
+            }
+            else if (page === "Projects") {
+                projects.classList.toggle('bg-blue-700');
+                projects.classList.toggle('md:text-blue-700');
+                projects.classList.toggle('text-white');
+                projects.classList.toggle('text-gray-900');
+                projects.classList.toggle('dark:text-white');
+                projects.classList.toggle('md:dark:text-blue-500');
+            }
+            else if (page === "CV") {
+                cv.classList.toggle('bg-blue-700');
+                cv.classList.toggle('md:text-blue-700');
+                cv.classList.toggle('text-white');
+                cv.classList.toggle('text-gray-900');
+                cv.classList.toggle('dark:text-white');
+                cv.classList.toggle('md:dark:text-blue-500');
+            }
+            if (this.current_page === "Home") {
+                home.classList.toggle('bg-blue-700');
+                home.classList.toggle('md:text-blue-700');
+                home.classList.toggle('text-white');
+                home.classList.toggle('text-gray-900');
+                home.classList.toggle('dark:text-white');
+                home.classList.toggle('md:dark:text-blue-500');
+            }
+            else if (this.current_page === "Projects") {
+                projects.classList.toggle('bg-blue-700');
+                projects.classList.toggle('md:text-blue-700');
+                projects.classList.toggle('text-white');
+                projects.classList.toggle('text-gray-900');
+                projects.classList.toggle('dark:text-white');
+                projects.classList.toggle('md:dark:text-blue-500');
+            }
+            else if (this.current_page === "CV") {
+                cv.classList.toggle('bg-blue-700');
+                cv.classList.toggle('md:text-blue-700');
+                cv.classList.toggle('text-white');
+                cv.classList.toggle('text-gray-900');
+                cv.classList.toggle('dark:text-white');
+                cv.classList.toggle('md:dark:text-blue-500');
+            }
+            if (page != this.current_page && page != 'CV') {
+                console.log(profile_view)
+                profile_view.classList.toggle('hidden');
+                projects_view.classList.toggle('hidden');
+            }
+            this.current_page = page;
+        },
+    },
 }
 </script>
 
@@ -34,7 +98,7 @@ export default {
         <div class="h-screen w-screen bg-gradient-to-r from-cyan-500 to-green-800 dark:to-black">
             <!-- Navbar -->
             <nav
-                class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b rounded-b-2xl opacity-95 border-gray-200 dark:border-gray-600">
+                class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b rounded-b-2xl border-gray-200 dark:border-gray-600">
                 <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-4 py-2">
                     <!-- Title -->
                     <div class="flex flex-col justify-start">
@@ -65,18 +129,22 @@ export default {
                         @click="">
                         <ul
                             class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-400 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-                            <li class="md:pt-5 dark:border-none md:border-none">
-                                <a href="#"
-                                    class="block py-2 px-3 text-white bg-blue-700 rounded-xl md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
-                                    aria-current="page">Home</a>
+                            <li class="md:pt-5">
+                                <button ref="home"
+                                    class="w-full block text-left py-2 px-3 text-white bg-blue-700 rounded-xl md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
+                                    @click="set_current_page('Home')">
+                                    Home</button>
                             </li>
-                            <li class="md:pt-5 rounded-xl dark:border-none md:border-none">
-                                <a href="#"
-                                    class="block py-2 px-3 text-gray-900 rounded-xl md:bg-white hover:bg-blue-300 dark:md:bg-gray-900 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Projects</a>
+                            <li class="md:pt-5">
+                                <button ref="projects"
+                                    class="w-full block text-left py-2 px-3 text-gray-900 rounded-xl md:bg-white hover:bg-blue-300 dark:md:bg-gray-900 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                                    @click="set_current_page('Projects')">
+                                    Projects</button>
                             </li>
-                            <li class="md:pt-5 rounded-xl dark:border-none md:border-none">
-                                <a href="#"
-                                    class="block py-2 px-3 text-gray-900 rounded-xl md:bg-white hover:bg-blue-300 dark:md:bg-gray-900 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">CV</a>
+                            <li class="md:pt-5">
+                                <button class="w-full" @click="set_current_page('CV')">
+                                    <a ref="cv" href="../assets/CV.pdf" download
+                                        class="block text-left py-2 px-3 text-gray-900 rounded-xl md:bg-white hover:bg-blue-300 dark:md:bg-gray-900 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">CV</a></button>
                             </li>
                             <!-- Night Mode Toggle -->
                             <li class="md:pt-5">
@@ -112,9 +180,12 @@ export default {
             </nav>
             <!-- Empty space to avoid navbar covering the page content -->
             <div class="w-screen h-20 md:h-28"></div>
-            <!-- Profile -->
-            <!-- <Profile /> -->
-            <Projects />
+            <div ref="profile_view">
+                <Profile />
+            </div>
+            <div ref="projects_view" class="hidden">
+                <Projects />
+            </div>
         </div>
     </div>
 </template>
