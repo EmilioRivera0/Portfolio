@@ -27,63 +27,68 @@ export default {
         set_current_page(page) {
             const home = this.$refs.home;
             const projects = this.$refs.projects;
-            const cv = this.$refs.cv;
+            const contact = this.$refs.contact;
 
             const profile_view = this.$refs.profile_view;
             const projects_view = this.$refs.projects_view;
+            const contact_view = this.$refs.contact_view;
 
-            if (page === "Home") {
-                home.classList.toggle('bg-blue-700');
-                home.classList.toggle('md:text-blue-700');
-                home.classList.toggle('text-white');
-                home.classList.toggle('text-gray-900');
-                home.classList.toggle('dark:text-white');
-                home.classList.toggle('md:dark:text-blue-500');
-            }
-            else if (page === "Projects") {
-                projects.classList.toggle('bg-blue-700');
-                projects.classList.toggle('md:text-blue-700');
-                projects.classList.toggle('text-white');
-                projects.classList.toggle('text-gray-900');
-                projects.classList.toggle('dark:text-white');
-                projects.classList.toggle('md:dark:text-blue-500');
-            }
-            else if (page === "CV") {
-                cv.classList.toggle('bg-blue-700');
-                cv.classList.toggle('md:text-blue-700');
-                cv.classList.toggle('text-white');
-                cv.classList.toggle('text-gray-900');
-                cv.classList.toggle('dark:text-white');
-                cv.classList.toggle('md:dark:text-blue-500');
-            }
-            if (this.current_page === "Home") {
-                home.classList.toggle('bg-blue-700');
-                home.classList.toggle('md:text-blue-700');
-                home.classList.toggle('text-white');
-                home.classList.toggle('text-gray-900');
-                home.classList.toggle('dark:text-white');
-                home.classList.toggle('md:dark:text-blue-500');
-            }
-            else if (this.current_page === "Projects") {
-                projects.classList.toggle('bg-blue-700');
-                projects.classList.toggle('md:text-blue-700');
-                projects.classList.toggle('text-white');
-                projects.classList.toggle('text-gray-900');
-                projects.classList.toggle('dark:text-white');
-                projects.classList.toggle('md:dark:text-blue-500');
-            }
-            else if (this.current_page === "CV") {
-                cv.classList.toggle('bg-blue-700');
-                cv.classList.toggle('md:text-blue-700');
-                cv.classList.toggle('text-white');
-                cv.classList.toggle('text-gray-900');
-                cv.classList.toggle('dark:text-white');
-                cv.classList.toggle('md:dark:text-blue-500');
-            }
-            if (page != this.current_page && page != 'CV') {
-                console.log(profile_view)
-                profile_view.classList.toggle('hidden');
-                projects_view.classList.toggle('hidden');
+            if (page != this.current_page) {
+                if (page === "Home") {
+                    home.classList.toggle('bg-blue-700');
+                    home.classList.toggle('md:text-blue-700');
+                    home.classList.toggle('text-white');
+                    home.classList.toggle('text-gray-900');
+                    home.classList.toggle('dark:text-white');
+                    home.classList.toggle('md:dark:text-blue-500');
+                    profile_view.classList.toggle('hidden');
+                }
+                else if (page === "Projects") {
+                    projects.classList.toggle('bg-blue-700');
+                    projects.classList.toggle('md:text-blue-700');
+                    projects.classList.toggle('text-white');
+                    projects.classList.toggle('text-gray-900');
+                    projects.classList.toggle('dark:text-white');
+                    projects.classList.toggle('md:dark:text-blue-500');
+                    projects_view.classList.toggle('hidden');
+                }
+                else if (page === "Contact") {
+                    contact.classList.toggle('bg-blue-700');
+                    contact.classList.toggle('md:text-blue-700');
+                    contact.classList.toggle('text-white');
+                    contact.classList.toggle('text-gray-900');
+                    contact.classList.toggle('dark:text-white');
+                    contact.classList.toggle('md:dark:text-blue-500');
+                    contact_view.classList.toggle('hidden');
+                }
+
+                if (this.current_page === "Home") {
+                    home.classList.toggle('bg-blue-700');
+                    home.classList.toggle('md:text-blue-700');
+                    home.classList.toggle('text-white');
+                    home.classList.toggle('text-gray-900');
+                    home.classList.toggle('dark:text-white');
+                    home.classList.toggle('md:dark:text-blue-500');
+                    profile_view.classList.toggle('hidden');
+                }
+                else if (this.current_page === "Projects") {
+                    projects.classList.toggle('bg-blue-700');
+                    projects.classList.toggle('md:text-blue-700');
+                    projects.classList.toggle('text-white');
+                    projects.classList.toggle('text-gray-900');
+                    projects.classList.toggle('dark:text-white');
+                    projects.classList.toggle('md:dark:text-blue-500');
+                    projects_view.classList.toggle('hidden');
+                }
+                else if (this.current_page === "Contact") {
+                    contact.classList.toggle('bg-blue-700');
+                    contact.classList.toggle('md:text-blue-700');
+                    contact.classList.toggle('text-white');
+                    contact.classList.toggle('text-gray-900');
+                    contact.classList.toggle('dark:text-white');
+                    contact.classList.toggle('md:dark:text-blue-500');
+                    contact_view.classList.toggle('hidden');
+                }
             }
             this.current_page = page;
         },
@@ -142,8 +147,14 @@ export default {
                                     Projects</button>
                             </li>
                             <li class="md:pt-5">
-                                <button class="w-full" @click="set_current_page('CV')">
-                                    <a ref="cv" href="/CV.pdf" download
+                                <button ref="contact"
+                                    class="w-full block text-left py-2 px-3 text-gray-900 rounded-xl md:bg-white hover:bg-blue-300 dark:md:bg-gray-900 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                                    @click="set_current_page('Contact')">
+                                    Contact</button>
+                            </li>
+                            <li class="md:pt-5">
+                                <button class="w-full">
+                                    <a href="/CV.pdf" download
                                         class="block text-left py-2 px-3 text-gray-900 rounded-xl md:bg-white hover:bg-blue-300 dark:md:bg-gray-900 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">CV</a></button>
                             </li>
                             <!-- Night Mode Toggle -->
@@ -180,11 +191,14 @@ export default {
             </nav>
             <!-- Empty space to avoid navbar covering the page content -->
             <div class="w-screen h-20 md:h-28"></div>
-            <div ref="profile_view">
+            <div ref="profile_view" class="">
                 <Profile />
             </div>
             <div ref="projects_view" class="hidden">
                 <Projects />
+            </div>
+            <div ref="contact_view" class="hidden">
+                <Contact />
             </div>
         </div>
     </div>
