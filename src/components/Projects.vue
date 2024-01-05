@@ -109,7 +109,7 @@ export default {
                 //JavaScript
                 {
                     title: "Portfolio",
-                    description: "Personal portfolio developed using recent and self taught technologies to expand my software development knowledge and capabilities.",
+                    description: "Personal portfolio developed using self taught technologies to expand my software development knowledge and capabilities. This is my first ever project using Vue.",
                     technologies: ["JavaScript", "Vue", "Tailwind"],
                     link: "https://github.com/EmilioRivera0/Portfolio",
                     l_check: true,

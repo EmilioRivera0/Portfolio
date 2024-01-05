@@ -54,12 +54,11 @@ export default {
                     and skills in order to continue constructing my professional profile with work experience.</p>
 
                 <p class="mb-3 font-normal text-xl md:text-2xl text-black dark:text-gray-400">
-                    Especially in any area related with enterprise and backend software since I’m very interested in
-                    learning more on these topics because they are developed with programming languages that I
-                    understand quite well and work with comfortably. I’m also very interested in learning new
-                    technologies and
-                    programming languages that improve my skill set and professional profile to extend even more my
-                    knowledge on the software development industry.</p>
+                    Especially in any area related with Linux, backend and desktop/business software development since I’m
+                    very interested in learning more on these topics and working with them because they are developed with
+                    programming languages and technologies that I understand quite well and work with comfortably. 
+                    I’m also very interested in learning new technologies and programming languages that improve my skill set and
+                    professional profile to extend even more my knowledge on the software development industry.</p>
 
                 <div>
                     <!-- Skills -->
@@ -150,6 +149,5 @@ export default {
                     </div>
                 </div>
             </div>
-        </div>
     </div>
-</template>
+</div></template>
