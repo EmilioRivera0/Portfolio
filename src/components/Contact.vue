@@ -9,7 +9,8 @@ export default {
                 },
                 {
                     title: "Email",
-                    link: "emilioriveramacias@gmail.com"
+                    link: "emilioriveramacias@gmail.com",
+                    mail: true,
                 },
                 {
                     title: "Github",
@@ -17,7 +18,8 @@ export default {
                 },
                 {
                     title: "Phone",
-                    content: "+52 222-489-6954"
+                    link: "522224896954",
+                    phone: true,
                 },
             ]
         }
@@ -37,8 +39,7 @@ export default {
             <ul class="w-full px-3 md:px-5 text-xl text-back dark:text-white">
                 <li v-for="it in contacts" class="py-2 border-b dark:border-gray-700 border-gray-600">
                     <h1>{{ it.title }}: </h1>
-                    <a v-if="it.link" :href="it.link" class="text-blue-700">{{ it.link }}</a>
-                    <h2 v-else>{{ it.content }}</h2>
+                    <a :href="it.mail? 'mailto:'+it.link : (it.phone? 'tel:+'+it.link : it.link)" class="text-blue-700">{{ '+'+it.link }}</a>
                 </li>
             </ul>
         </div>
