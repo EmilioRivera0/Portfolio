@@ -11,7 +11,7 @@ export default {
             rd: ["Relational Databases", "MySQL", "PostgreSQL", "SQLite"],
             nrd: ["Non Relational Databases", "MongoDB"],
             other: ["Java", "Postman", "OOP", "Data Structures", "ORM"],
-            strengths: ["Ladership", "Confident", "Social", "Great Communicator", "Responsible", "Initiative", "Inquirer", "Curiosity"]
+            strengths: ["Leadership", "Confident", "Social", "Great Communicator", "Responsible", "Initiative", "Inquirer", "Curiosity"]
         }
     },
     methods: {
