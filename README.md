@@ -1,2 +1,2 @@
 # Personal Portfolio
-Personal portfolio developed using recent and self taught technologies to expand my software development knowledge and capabilities.
+Personal portfolio developed using self taught technologies to expand my software development knowledge and capabilities.
