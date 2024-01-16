@@ -3,7 +3,7 @@ export default {
     data() {
         return {
             category: "All",
-            categories: ["All", "C/C++", "Python", "JavaScript"],
+            categories: ["All", "C/C++", "C#", "Python", "JavaScript"],
             projects: [
                 //C/C++
                 {
@@ -20,6 +20,45 @@ export default {
                     link: "https://github.com/EmilioRivera0/Client_Server_IPC_Linux",
                     l_check: true,
                 },
+                //C#
+                {
+                    title: "Desktop App",
+                    description: "Collaborating on the designing and development of a desktop application for administering the inventory at FISAIR Puebla.",
+                    technologies: ["C#", ".NET", "MAUI", "XAML",],
+                    link: "",
+                    l_check: false,
+                },
+                // Python
+                {
+                    title: "Engineering Faculty Repository API",
+                    description: "I'm managing, designing and developing an API as the backend of the upcoming engineering repository for the IBERO Puebla community using Python and Django REST Framework.",
+                    technologies: ["Python", "Django", "Django REST Framework", "Postman", "SQLite"],
+                    link: "",
+                    l_check: false
+                },
+                {
+                    title: "Videogame API",
+                    description: "Python developed API that has the CRUD functions and a search engine to interact with a PostgreSQL database containing information about videogames.",
+                    technologies: ["Python", "Flask", "PostgreSQL"],
+                    link: "https://github.com/EmilioRivera0/videogame_api",
+                    l_check: true
+                },
+                {
+                    title: "Ecommerce",
+                    description: "This repository holds a basic Ecommerce website for selling any type of product.",
+                    technologies: ["Python", "Django", "SQLite", "MDB Bootstrap"],
+                    link: "https://github.com/EmilioRivera0/ecommerce_backend",
+                    l_check: true
+                },
+                //JavaScript
+                {
+                    title: "Mobile App",
+                    description: "Collaborating on the designing and development of a mobile application for FISAIR Puebla.",
+                    technologies: ["JavaScript", "React", "Ionic", "Tailwind"],
+                    link: "",
+                    l_check: false
+                },
+                //C/C++
                 {
                     title: "Truth Table Generator",
                     description: "Software developed in C that receives a logical expression and generates its respective truth table.",
@@ -55,27 +94,12 @@ export default {
                     link: "https://github.com/EmilioRivera0/ATmega328P_8-bit_Snake",
                     l_check: true
                 },
-                //C#
                 //Python
-                {
-                    title: "Ecommerce",
-                    description: "This repository holds a basic Ecommerce website for selling any type of product.",
-                    technologies: ["Python", "Django", "SQLite", "MDB Bootstrap"],
-                    link: "https://github.com/EmilioRivera0/ecommerce_backend",
-                    l_check: true
-                },
                 {
                     title: "Sobel Filter",
                     description: "Python program capable of detecting the vertical and horizontal edges of an image by applying the Sobel filters.",
                     technologies: ["Python", "OpenCV", "Matplotlib", "Numpy"],
                     link: "https://github.com/EmilioRivera0/Sobel_Filter",
-                    l_check: true
-                },
-                {
-                    title: "Videogame API",
-                    description: "Python developed API that has the CRUD functions and a search engine to interact with a PostgreSQL database containing information about videogames.",
-                    technologies: ["Python", "Flask", "PostgreSQL"],
-                    link: "https://github.com/EmilioRivera0/videogame_api",
                     l_check: true
                 },
                 {
@@ -99,13 +123,6 @@ export default {
                     link: "https://github.com/EmilioRivera0/hour_tracker",
                     l_check: true
                 },
-                {
-                    title: "Engineering Faculty Repository API",
-                    description: "I'm managing, designing and developing an API as the backend of the upcoming engineering repository for the IBERO Puebla community using Python and Django REST Framework.",
-                    technologies: ["Python", "Django", "Django REST Framework", "Postman", "SQLite"],
-                    link: "",
-                    l_check: false
-                },
                 //JavaScript
                 {
                     title: "Portfolio",
@@ -113,13 +130,6 @@ export default {
                     technologies: ["JavaScript", "Vue", "Tailwind"],
                     link: "https://github.com/EmilioRivera0/Portfolio",
                     l_check: true,
-                },
-                {
-                    title: "Mobile App",
-                    description: "Collaborating on the designing and development of a mobile application for FISAIR Puebla.",
-                    technologies: ["JavaScript", "React", "Ionic", "Tailwind"],
-                    link: "",
-                    l_check: false
                 },
             ]
         }
