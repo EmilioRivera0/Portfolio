@@ -10,7 +10,7 @@ export default {
             js: ["JavaScript", "Vue", "React", "Tailwind"],
             rd: ["Relational Databases", "MySQL", "PostgreSQL", "SQLite"],
             nrd: ["Non Relational Databases", "MongoDB"],
-            other: ["Java", "Postman", "OOP", "Data Structures", "ORM"],
+            other: ["Docker", "Java", "Postman", "OOP", "Data Structures", "ORM"],
             strengths: ["Leadership", "Confident", "Social", "Great Communicator", "Responsible", "Initiative", "Inquirer", "Curiosity"]
         }
     },
