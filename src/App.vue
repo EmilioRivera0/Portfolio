@@ -116,7 +116,7 @@ export default {
                             <p class="self-center text-sm md:text-md font-semibold whitespace-nowrap dark:text-white">
                                 Computer
                                 Systems
-                                Engineering Student</p>
+                                Engineering</p>
                         </div>
                     </div>
                     <!-- Mobile Menu Toggle Button -->

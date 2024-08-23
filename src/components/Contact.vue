@@ -36,7 +36,7 @@ export default {
             <div class="w-full text-center font-bold text-xl border-b text-black dark:text-white border-gray-600">
                 <h1 class="py-2">Contact</h1>
             </div>
-            <ul class="w-full px-3 md:px-5 text-xl text-back dark:text-white">
+            <ul class="w-full px-5 text-xl text-back dark:text-white">
                 <li v-for="it in contacts" class="py-2 border-b dark:border-gray-700 border-gray-600">
                     <h1>{{ it.title }}: </h1>
                     <a :href="it.mail? 'mailto:'+it.link : (it.phone? 'tel:+'+it.link : it.link)" class="text-blue-700">{{ '+'+it.link }}</a>

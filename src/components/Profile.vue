@@ -49,16 +49,16 @@ export default {
                     Engineering and Development industries.</p>
 
                 <p class="mb-3 font-normal text-xl md:text-2xl text-black dark:text-gray-400">
-                    I’m currently seeking to become part of a project or company to contribute and strengthen my
-                    knowledge
-                    and skills in order to continue constructing my professional profile with work experience.</p>
+                    I’m currently seeking to participate in projects to contribute and strengthen my knowledge and skills 
+                    in order to continue constructing my professional profile with work experience as well as providing the 
+                    best solution for the clients.</p>
 
                 <p class="mb-3 font-normal text-xl md:text-2xl text-black dark:text-gray-400">
-                    Especially in any area related with Linux, backend and desktop/business software development since I’m
-                    very interested in learning more on these topics and working with them because they are developed with
-                    programming languages and technologies that I understand quite well and work with comfortably. 
-                    I’m also very interested in learning new technologies and programming languages that improve my skill set and
-                    professional profile to extend even more my knowledge on the software development industry.</p>
+                    Especially in any area related with Web Development, Backend and Desktop/Business Software development since I have strong skills 
+                    on these topics and working with technologies related to them because they 
+                    are developed with programming languages and concepts that I understand perfectly and work with comfortably. 
+                    I’m also very open in using new technologies and programming languages that improve my skill set and professional 
+                    profile to extend even more my knowledge on the software development industry.</p>
 
                 <div>
                     <!-- Skills -->

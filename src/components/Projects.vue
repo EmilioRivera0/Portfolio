@@ -220,7 +220,7 @@ export default {
             </div>
             <!-- Cards Container -->
             <div class="grid md:grid-cols-3">
-                <div v-for="it in get_content" class="flex flex-col items-start min-[1000px]:flex-row md:mx-1 mb-3">
+                <div v-for="it in get_content" class="flex flex-col min-[1000px]:flex-row md:mx-1 mb-3">
                     <!-- Image Preview
                     <img class="object-cover w-full min-[1000px]:w-1/3 rounded-xl h-96"
                         :src="'/@fs'+it.image" @click="set_img(it.image)">-->
