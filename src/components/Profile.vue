@@ -39,7 +39,7 @@ export default {
             <img class="object-cover w-full rounded-xl h-96 md:h-full md:w-1/3" src="../assets/Me.jpg" alt="">
             <!-- Description of Me -->
             <div
-                class="flex flex-col justify-between mt-3 md:mt-0 md:ml-4 p-4 leading-normal md:w-2/3 opacity-95 border border-gray-200 rounded-xl shadow bg-white dark:border-gray-700 dark:bg-gray-800">
+                class="flex flex-col justify-between mt-3 mb-24 md:mt-0 md:ml-4 p-4 leading-normal md:w-2/3 opacity-95 border border-gray-200 rounded-xl shadow bg-white dark:border-gray-700 dark:bg-gray-800">
                 <h1 class="mb-2 text-lg md:text-2xl font-bold tracking-tight text-gray-900 dark:text-white">About Me
                 </h1>
                 <p class="mb-3 font-normal text-xl md:text-2xl text-black dark:text-gray-400">
